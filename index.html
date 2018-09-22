@@ -9,7 +9,7 @@
     <meta name="author" content="Steven Gerner">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -17,16 +17,16 @@
         <h1 class="title">Calculate Cash Avaliable</h1>
         <p class="instructions">Please input the number of bills or coins for each denomination. This page will automatically calculate the total.</p>
         <form>
-            <div class="row"><label for="$100">$100</label><input type="number" id="$100"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="$50">$50</label><input type="number" id="$50"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="$20">$20</label><input type="number" id="$20"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="$10">$10</label><input type="number" id="$10"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="$5">$5</label><input type="number" id="$5"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="$1">$1</label><input type="number" id="$1"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="quarter">Quarter ($0.25)</label><input type="number" id="quarter"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="dime">Dime ($0.10)</label><input type="number" id="dime"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="nickel">Nickel ($0.05)</label><input type="number" id="nickel"><p id="$100-result" class="form-results"></p></div>
-            <div class="row"><label for="penny">Penny ($0.01)</label><input type="number" id="penny"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="100">$100</label><input type="number" id="100" onchange="total()" onkeyup="total()"><p id="100-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="50">$50</label><input type="number" id="50" onchange="total()" onkeyup="total()"><p id="50-result" class="form-results" name="denomination" value=""></p></div>
+            <div class="row"><label for="20">$20</label><input type="number" id="20" onchange="total()" onkeyup="total()"><p id="20-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="10">$10</label><input type="number" id="10" onchange="total()" onkeyup="total()"><p id="10-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="5">$5</label><input type="number" id="5" onchange="total()" onkeyup="total()"><p id="5-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="1">$1</label><input type="number" id="1" onchange="total()" onkeyup="total()"><p id="1-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.25">Quarter ($0.25)</label><input type="number" id="0.25" onchange="total()" onkeyup="total()"><p id="0.25-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.50">Dime ($0.10)</label><input type="number" id="0.10" onchange="total()" onkeyup="total()"><p id="0.10-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.05">Nickel ($0.05)</label><input type="number" id="0.05" onchange="total()" onkeyup="total()"><p id="0.05-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.01">Penny ($0.01)</label><input type="number" id="0.01" onchange="total()" onkeyup="total()"><p id="0.01-result" class="form-results" name="denomination"  value=""></p></div>
         </form>
         <div class="total"><p>Total:</p><p id="total-results"></p></div>
     </div>
