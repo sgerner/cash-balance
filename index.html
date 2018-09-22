@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Calculate Cash</title>
+    <meta name="description" content="Calculate cash-on-hand">
+    <meta name="author" content="Steven Gerner">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="inner">
+        <h1 class="title">Calculate Cash Avaliable</h1>
+        <p class="instructions">Please input the number of bills or coins for each denomination. This page will automatically calculate the total.</p>
+        <form>
+            <div class="row"><label for="$100">$100</label><input type="number" id="$100"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="$50">$50</label><input type="number" id="$50"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="$20">$20</label><input type="number" id="$20"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="$10">$10</label><input type="number" id="$10"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="$5">$5</label><input type="number" id="$5"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="$1">$1</label><input type="number" id="$1"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="quarter">Quarter ($0.25)</label><input type="number" id="quarter"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="dime">Dime ($0.10)</label><input type="number" id="dime"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="nickel">Nickel ($0.05)</label><input type="number" id="nickel"><p id="$100-result" class="form-results"></p></div>
+            <div class="row"><label for="penny">Penny ($0.01)</label><input type="number" id="penny"><p id="$100-result" class="form-results"></p></div>
+        </form>
+        <div class="total"><p>Total:</p><p id="total-results"></p></div>
+    </div>
+</body>
+</html>
