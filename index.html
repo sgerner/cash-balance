@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
@@ -17,18 +18,19 @@
         <h1 class="title">Calculate Cash Avaliable</h1>
         <p class="instructions">Please input the number of bills or coins for each denomination. This page will automatically calculate the total.</p>
         <form>
-            <div class="row"><label for="100">$100</label><input type="number" id="100" onchange="total()" onkeyup="total()"><p id="100-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="50">$50</label><input type="number" id="50" onchange="total()" onkeyup="total()"><p id="50-result" class="form-results" name="denomination" value=""></p></div>
-            <div class="row"><label for="20">$20</label><input type="number" id="20" onchange="total()" onkeyup="total()"><p id="20-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="10">$10</label><input type="number" id="10" onchange="total()" onkeyup="total()"><p id="10-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="5">$5</label><input type="number" id="5" onchange="total()" onkeyup="total()"><p id="5-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="1">$1</label><input type="number" id="1" onchange="total()" onkeyup="total()"><p id="1-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="0.25">Quarter ($0.25)</label><input type="number" id="0.25" onchange="total()" onkeyup="total()"><p id="0.25-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="0.50">Dime ($0.10)</label><input type="number" id="0.10" onchange="total()" onkeyup="total()"><p id="0.10-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="0.05">Nickel ($0.05)</label><input type="number" id="0.05" onchange="total()" onkeyup="total()"><p id="0.05-result" class="form-results" name="denomination"  value=""></p></div>
-            <div class="row"><label for="0.01">Penny ($0.01)</label><input type="number" id="0.01" onchange="total()" onkeyup="total()"><p id="0.01-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="100">$100</label><input type="number" id="100" onchange="total(event)" onkeyup="total(event)"><p id="100-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="50">$50</label><input type="number" id="50" onchange="total(event)" onkeyup="total(event)"><p id="50-result" class="form-results" name="denomination" value=""></p></div>
+            <div class="row"><label for="20">$20</label><input type="number" id="20" onchange="total(event)" onkeyup="total(event)" autofocus><p id="20-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="10">$10</label><input type="number" id="10" onchange="total(event)" onkeyup="total(event)"><p id="10-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="5">$5</label><input type="number" id="5" onchange="total(event)" onkeyup="total(event)"><p id="5-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="1">$1</label><input type="number" id="1" onchange="total(event)" onkeyup="total(event)"><p id="1-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.25">Quarter ($0.25)</label><input type="number" id="0.25" onchange="total(event)" onkeyup="total(event)"><p id="0.25-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.50">Dime ($0.10)</label><input type="number" id="0.10" onchange="total(event)" onkeyup="total(event)"><p id="0.10-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.05">Nickel ($0.05)</label><input type="number" id="0.05" onchange="total(event)" onkeyup="total(event)"><p id="0.05-result" class="form-results" name="denomination"  value=""></p></div>
+            <div class="row"><label for="0.01">Penny ($0.01)</label><input type="number" id="0.01" onchange="total(event)" onkeyup="total(event)"><p id="0.01-result" class="form-results" name="denomination"  value=""></p></div>
         </form>
-        <div class="total"><p>Total:</p><p id="total-results"></p></div>
+        <div class="total"><p>Total </p><p id="total-results"></p></div>
     </div>
+    <p id="photo-credit">Photo by <a href="https://unsplash.com/photos/uJm-hfuCHm4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathieu Turle</a> on <a href="https://unsplash.com/">Unsplash</a></p>
 </body>
 </html>

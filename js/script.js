@@ -2,12 +2,13 @@
 ** the denomination value. Please make sure that id is only a number
 ** which matches the desired denomination.
 */
-
-function total() {
+function total(event) {
+    // Event handler because firefox does not have global events
+    if (!e) var e = event;
     //Updates the box next to each denomination with the sum for that denomination
-    let id = document.getElementById(event.target.id + '-result');
-    let currencySum = event.target.id * event.target.value;
-    id.innerHTML = '$' + currencySum;
+    let id = document.getElementById(e.target.id + '-result');
+    let currencySum = e.target.id * e.target.value;
+    id.innerHTML = '$ ' + currencySum;
     id.value = currencySum;
 
     //Updates the total sum
@@ -20,5 +21,5 @@ function total() {
         }
     }
     
-    document.getElementById('total-results').innerHTML = '$' + sum;
+    document.getElementById('total-results').innerHTML = '$ ' + sum;
 }
