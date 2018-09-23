@@ -3,4 +3,4 @@ A little webpage to determine the current cash-on-hand. Just enter the number of
 
 Assumes United States currency denominations.
 
-View [demo](https://StevenGerner.com/cash-balance/)
+View [demo](https://StevenGerner.com/cash/)
