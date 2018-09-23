@@ -21,6 +21,7 @@ div.inner {
     color: black;
     max-width: max-content;
     max-width: -moz-max-content;
+    max-width: -webkit-max-content;
     margin: auto;
     font-size: 0.8em;
 }
@@ -54,6 +55,7 @@ form {
     background: rgba(255,255,255,.1);
     max-width: max-content;
     max-width: -moz-max-content;
+    max-width: -webkit-max-content;
 }
 
 label {
