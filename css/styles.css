@@ -7,8 +7,14 @@ body {
     background-size: cover;
 }
 
+@media (max-width: 800px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
 div.inner {
-    max-width: 35em;
+    max-width: 50em;
     margin: 2em auto;
     background: rgba(0,0,0,.3);
     padding: 2em;
@@ -19,9 +25,9 @@ div.inner {
     background: rgba(255,255,255,.5);
     padding: 0.25em 1em;
     color: black;
-    max-width: max-content;
     max-width: -moz-max-content;
     max-width: -webkit-max-content;
+    max-width: max-content;
     margin: auto;
     font-size: 0.8em;
 }
@@ -46,6 +52,7 @@ a {
 form {
     font-size: 1.2em;
 }
+
 .row {
     display: grid;
     grid-template-columns: 8em auto;
@@ -53,9 +60,7 @@ form {
     margin: 0 auto .5em auto;
     border: 1px solid rgba(255,255,255,.2);
     background: rgba(255,255,255,.1);
-    max-width: max-content;
-    max-width: -moz-max-content;
-    max-width: -webkit-max-content;
+    max-width: 19.5em;
 }
 
 label {
@@ -110,5 +115,16 @@ p.form-results {
     p.form-results {
         grid-column: unset;
         justify-self: end;
+    }
+}
+
+@media (min-width: 880px) {
+    form {
+        display: grid;
+        grid-template-columns: 20em 20em;
+        grid-auto-flow: column;
+        grid-template-rows: auto auto auto auto auto;
+        grid-column-gap: 1em;
+        justify-content: center;
     }
 }

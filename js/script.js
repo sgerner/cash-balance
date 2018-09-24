@@ -8,7 +8,6 @@ function total(event) {
     //Updates the box next to each denomination with the sum for that denomination
     let id = document.getElementById(e.target.id + '-result');
     let currencySum = e.target.id * e.target.value;
-    console.log(currencySum);
     id.innerHTML = '$ ' + currencySum.toFixed(2);
     id.value = currencySum;
 
