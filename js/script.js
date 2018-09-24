@@ -9,7 +9,7 @@ function total(event) {
     let id = document.getElementById(e.target.id + '-result');
     let currencySum = e.target.id * e.target.value;
     console.log(currencySum);
-    id.innerHTML = '$ ' + currencySum;
+    id.innerHTML = '$ ' + currencySum.toFixed(2);
     id.value = currencySum;
 
     //Updates the total sum
@@ -18,9 +18,9 @@ function total(event) {
 
     for (let i = 0; i < inputArray.length; i++) {
         if(parseFloat(inputArray[i].value)) {
-            sum += parseFloat(inputArray[i].value);
+            sum += parseFloat(inputArray[i].value.toPrecision(2));
         }
     }
     
-    document.getElementById('total-results').innerHTML = '$ ' + sum;
+    document.getElementById('total-results').innerHTML = '$ ' + sum.toFixed(2);
 }
